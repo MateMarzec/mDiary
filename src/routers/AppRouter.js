@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route, Routes } from 'react-router-dom';
+import {  BrowserRouter as Router,  Routes,  Route} from "react-router-dom";
 import { createBrowserHistory } from 'history';
 import DashboardPage from '../components/DashboardPage';
 import ViewTestResults from '../components/ViewTestResults';
@@ -18,14 +18,16 @@ const AppRouter = () => (
   <Router history={history}>
     <div>
       <Routes>
-        <PublicRoute path="/" element={<LoginPage/>} exact={true} />
-        <PrivateRoute path="/dashboard" element={<DashboardPage/>} />
-        <PrivateRoute path="/testResults" element={<ViewTestResults/>} />
-        <PrivateRoute path="/testResult/:id" element={<ViewTestResult/>} />
-        <PrivateRoute path="/create" element={<AddTestResults/>} />
-        <PrivateRoute path="/edit/:id" element={<EditTestResults/>} />
-        <PrivateRoute path="/preferences" element={<Preferences/>} />
-        <Route element={<NotFoundPage/>} />
+        <Route exact path='/' element={<PrivateRoute/>}>
+          <Route path="/dashboard" element={<DashboardPage/>} />
+          <Route path="/testResults" element={<ViewTestResults/>} />
+          <Route path="/testResult/:id" element={<ViewTestResult/>} />
+          <Route path="/create" element={<AddTestResults/>} />
+          <Route path="/edit/:id" element={<EditTestResults/>} />
+          <Route path="/preferences" element={<Preferences/>} />
+        </Route>
+        <Route exact path="/" element={<LoginPage/>}/>
+        <Route element={NotFoundPage} />
       </Routes>
     </div>
   </Router>
