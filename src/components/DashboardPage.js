@@ -1,14 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import TestResultList from './TestResultList';
-import TestResultListFilter from './TestResultListFilter';
+import DashboardDescription from './DashboardDescription'
 
 
 const DashboardPage = () => (
   <div>
-    <Link className="button" to="/create">Add Test</Link>
-    <TestResultListFilter />
-    <TestResultList />
+    <DashboardDescription />
+    <div className='box'>
+      <Link className="button" to="/create">Add Blood Test Result</Link>
+    </div>
+    <div className='box'>
+      <Link className="button" to="/testResults">View Previous Blood Tests</Link>
+    </div>
   </div>
 );
 

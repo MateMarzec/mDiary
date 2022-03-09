@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Route, Redirect } from 'react-router-dom';
+import Logo from '../components/Logo'
+import Background from '../components/Background';
 import Header from '../components/Header';
 
 export const PrivateRoute = ({
@@ -11,6 +13,8 @@ export const PrivateRoute = ({
     <Route {...rest} component={(props) => (
       isAuthenticated ? (
         <div>
+          <Logo />
+          <Background />
           <Header />
           <Component {...props} />
         </div>
