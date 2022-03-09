@@ -1,6 +1,6 @@
 const testsReducerDefaultState = [];
 
-export default (state = testsReducerDefaultState, action) => {
+const tests = (state = testsReducerDefaultState, action) => {
   switch (action.type) {
     case 'ADD_TEST':
       return [
@@ -26,3 +26,4 @@ export default (state = testsReducerDefaultState, action) => {
       return state;
   }
 };
+export default tests;
