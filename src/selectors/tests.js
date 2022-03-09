@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-export default (tests, { text, sortBy, startDate, endDate }) => {
+const tests = (tests, { text, sortBy, startDate, endDate }) => {
   return tests.filter((test) => {
     const createdAtMoment = moment(test.createdAt);
     const startDateMatch = startDate ? startDate.isSameOrBefore(createdAtMoment, 'day') : true;
@@ -16,3 +16,4 @@ export default (tests, { text, sortBy, startDate, endDate }) => {
     }
   });
 };
+export default tests;
