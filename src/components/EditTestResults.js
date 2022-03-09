@@ -32,9 +32,11 @@ export class EditTestPage extends React.Component {
   }
 };
 
-const mapStateToProps = (state, props) => ({
-  test: state.tests.find((test) => test.id === props.match.params.id)
-});
+const mapStateToProps = (state, props) => {
+  return {
+    test: state.test.find((test) =>  test.id === props.match.params.id)
+  }
+}
 
 const mapDispatchToProps = (dispatch, props) => ({
   startEditTest: (id, test) => dispatch(startEditTest(id, test)),
