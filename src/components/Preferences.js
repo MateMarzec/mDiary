@@ -6,6 +6,7 @@ export const Header = ({ startLogout }) => (
   <header className="header">
     <div className="content-container">
         <h1>Test</h1>
+        <button className="button button--link" onClick={startLogout}>Logout</button>
     </div>
   </header>
 );

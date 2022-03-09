@@ -8,10 +8,10 @@ export const Header = () => (
         <Link className="header__title" to="/dashboard">
           <h1>Home</h1>
         </Link>
-        <Link className="header__title" to="/dashboard">
+        <Link className="header__title" to="/testResults">
           <h1>Dashboard</h1>
         </Link>
-        <Link className="header__title" to="/testResults">
+        <Link className="header__title" to="/preferences">
           <h1>Settings</h1>
         </Link>
       </div>
