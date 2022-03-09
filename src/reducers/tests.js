@@ -21,7 +21,7 @@ const tests = (state = testsReducerDefaultState, action) => {
         };
       });
     case 'SET_TESTS':
-      return action.test;
+      return action.tests;
     default:
       return state;
   }

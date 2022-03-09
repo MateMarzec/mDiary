@@ -15,19 +15,21 @@ import PublicRoute from './PublicRoute';
 export const history = createBrowserHistory();
 
 const AppRouter = () => (
-  <Router history={history}>
+  <Router>
     <div>
       <Routes>
-        <Route exact path='/' element={<PrivateRoute/>}>
-          <Route path="/dashboard" element={<DashboardPage/>} />
-          <Route path="/testResults" element={<ViewTestResults/>} />
-          <Route path="/testResult/:id" element={<ViewTestResult/>} />
-          <Route path="/create" element={<AddTestResults/>} />
-          <Route path="/edit/:id" element={<EditTestResults/>} />
-          <Route path="/preferences" element={<Preferences/>} />
+        <Route element={<PrivateRoute />}>
+          <Route path="/dashboard" element={<DashboardPage />} />
         </Route>
-        <Route exact path="/" element={<LoginPage/>}/>
-        <Route element={NotFoundPage} />
+        <Route exact path='/dashboard' element={<DashboardPage/>}/>
+        <Route path="/dashboard" element={<DashboardPage/>} />
+        <Route path="/testResults" element={<ViewTestResults/>} />
+        <Route path="/testResult/:id" element={<ViewTestResult/>} />
+        <Route path="/create" element={<AddTestResults/>} />
+        <Route path="/edit/:id" element={<EditTestResults/>} />
+        <Route path="/preferences" element={<Preferences/>} />
+        <Route path="/" element={<LoginPage/>}/>
+        <Route element={<NotFoundPage/>} />
       </Routes>
     </div>
   </Router>
