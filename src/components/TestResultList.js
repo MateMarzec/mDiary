@@ -28,7 +28,7 @@ export const TestResultList = (props) => (
 
 const mapStateToProps = (state) => {
   return {
-    tests: selectTests(state.tests, state.filters)
+    tests: selectTests(state.test, state.filters)
   };
 };
 

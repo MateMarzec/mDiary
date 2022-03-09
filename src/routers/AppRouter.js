@@ -1,6 +1,6 @@
 import React from 'react';
-import {  BrowserRouter as Router,  Routes,  Route} from "react-router-dom";
-import { createBrowserHistory } from 'history';
+import { Router, Route, Switch} from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory';
 import DashboardPage from '../components/DashboardPage';
 import ViewTestResults from '../components/ViewTestResults';
 import ViewTestResult from '../components/ViewTestResult';
@@ -10,26 +10,23 @@ import Preferences from '../components/Preferences';
 import NotFoundPage from '../components/NotFoundPage';
 import LoginPage from '../components/LoginPage';
 import PrivateRoute from './PrivateRoute';
+import PublicRoute from './PublicRoute';
 
-export const history = createBrowserHistory();
+export const history = createHistory();
 
 const AppRouter = () => (
-  <Router>
+  <Router history={history}>
     <div>
-      <Routes>
-        <Route element={<PrivateRoute />}>
-          <Route path="/dashboard" element={<DashboardPage />} />
-        </Route>
-        <Route exact path='/dashboard' element={<DashboardPage/>}/>
-        <Route path="/dashboard" element={<DashboardPage/>} />
-        <Route path="/testResults" element={<ViewTestResults/>} />
-        <Route path="/testResult/:id" element={<ViewTestResult/>} />
-        <Route path="/create" element={<AddTestResults/>} />
-        <Route path="/edit/:id" element={<EditTestResults/>} />
-        <Route path="/preferences" element={<Preferences/>} />
-        <Route path="/" element={<LoginPage/>}/>
-        <Route element={<NotFoundPage/>} />
-      </Routes>
+      <Switch>
+        <PrivateRoute path="/dashboard" component={DashboardPage} />
+        <PrivateRoute path="/testResults" component={ViewTestResults} />
+        <PrivateRoute path="/testResult/:id" component={ViewTestResult} />
+        <PrivateRoute path="/create" component={AddTestResults} />
+        <PrivateRoute path="/edit/:id" component={EditTestResults} />
+        <PrivateRoute path="/preferences" component={Preferences} />
+        <PublicRoute path="/" component={LoginPage} exact={true}/>
+        <Route component={NotFoundPage} />
+      </Switch>
     </div>
   </Router>
 );

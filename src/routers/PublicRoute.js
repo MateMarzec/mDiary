@@ -1,15 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Route, Navigate } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 
 export const PublicRoute = ({
   isAuthenticated,
   component: Component,
   ...rest
 }) => (
-    <Route {...rest} element={(props) => (
+    <Route {...rest} component={(props) => (
       isAuthenticated ? (
-        <Navigate to="/dashboard" />
+        <Redirect to="/dashboard" />
       ) : (
           <Component {...props} />
         )
