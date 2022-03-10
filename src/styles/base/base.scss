@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+$blue: #4BB3FD;
+$green: #29E7CD;
+$black: #040F16;
+$white: #FFFBFC;
+$facebook: #4267B2;
+$google: #4285F4;
+
+@font-face {
+  font-family: SfCompactRoundedRegular;
+  src: url(../fonts/FontsFree-Net-SF-Compact-Rounded-Regular.ttf);
+}
+@font-face {
+  font-family: SfCompactRoundedMedium;
+  src: url(../fonts/FontsFree-Net-SF-Compact-Rounded-Medium.ttf);
+}
+@font-face {
+  font-family: SfCompactRoundedSemibold;
+  src: url(../fonts/FontsFree-Net-SF-Compact-Rounded-Semibold.ttf);
+}
+@font-face {
+  font-family: SfCompactRoundedBold;
+  src: url(../fonts/FontsFree-Net-SF-Compact-Rounded-Bold.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  font-family: SfCompactRoundedRegular;
+  z-index: 0;
+  margin: 0;
+}
+h1{
+  font-family: SfCompactRoundedMedium;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+h2{
+  font-family: SfCompactRoundedSemibold;
+  font-size: 25px;
+  letter-spacing: 0;
+}
+h3{
+  font-family: SfCompactRoundedMedium;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+h4{
+  font-family: SfCompactRoundedMedium;
+  font-size: 28px;
+  letter-spacing: 0;
+}
+h5{
+  font-family: SfCompactRoundedBold;
+  font-size: 12px;
+  letter-spacing: 0;
 }
