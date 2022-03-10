@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import DashboardDescription from './DashboardDescription'
+import UserName from './UserName'
 
 
 const DashboardPage = () => (
   <div>
-    <DashboardDescription />
+    <h4>Good Morning,</h4>
+      <UserName />
+    <h4>How can we help?</h4> 
     <div className='box'>
       <Link className="button" to="/create">Add Blood Test Result</Link>
     </div>
