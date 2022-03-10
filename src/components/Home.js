@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import UserName from './UserName'
 
 
-const DashboardPage = () => (
+const Home = () => (
   <div>
     <h4>Good Morning,</h4>
       <UserName />
-    <h4>How can we help?</h4> 
+    <h4>How can we help?</h4>
     <div className='box'>
       <Link className="button" to="/create">Add Blood Test Result</Link>
     </div>
@@ -17,4 +17,4 @@ const DashboardPage = () => (
   </div>
 );
 
-export default DashboardPage;
+export default Home;
