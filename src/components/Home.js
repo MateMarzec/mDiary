@@ -1,20 +1,32 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import UserName from './UserName'
+import add from '../images/add.png'
+import view from '../images/view.png'
 
 
 const Home = () => (
-  <div>
-    <h4>Good Morning,</h4>
-      <UserName />
-    <h4>How can we help?</h4>
-    <div className='box'>
-      <Link className="button" to="/create">Add Blood Test Result</Link>
+  <main className='home__page'>
+    <div className='home__description'>
+      <h4>Good Morning,</h4>
+      <h3><UserName /></h3>
+      <h4>How can we help?</h4>
     </div>
-    <div className='box'>
-      <Link className="button" to="/testResults">View Previous Blood Tests</Link>
+    <div className='home__boxes'>
+      <Link className='home--addBox linkBox' to="/create">
+        <img className='box__logo' src={add} alt="Add" />
+        <div className='button'>
+          <div className="button--text"><h4>Add Blood Test Result</h4></div>
+        </div>
+      </Link>
+      <Link className='home--viewBox linkBox' to="/dashboard">
+        <img className='box__logo' src={view} alt="Add" />
+        <div className='button'>
+          <div className="button--text"><h4>View Previous Blood Tests</h4></div>
+        </div>
+      </Link>
     </div>
-  </div>
+  </main>
 );
 
 export default Home;

@@ -26,6 +26,10 @@ $google: #4285F4;
   font-family: SfCompactRoundedRegular;
   z-index: 0;
   margin: 0;
+  text-decoration: none;
+}
+body{
+  background-color: $white;
 }
 
 h1{
@@ -41,7 +45,7 @@ h2{
 h3{
   font-family: SfCompactRoundedMedium;
   font-size: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 0;
 }
 h4{
   font-family: SfCompactRoundedMedium;

@@ -13,21 +13,28 @@ export const Preferences = ({ startLogout }) => (
         </h2>
       </div>
       <div className='preferences__links'>
-        <div className="preferences__button account" >
-          <Link className="link" to="/account">
-            <h4>Account</h4>
-          </Link>
-        </div>
-        <div className="preferences__button notification" >
-          <Link className="link" to="/notification">
-            <h4>Notification</h4>
-          </Link>
-        </div>
-        <div className="preferences__button help" >
-          <Link className="link" to="/help">
-            <h4>Help</h4>
-          </Link>
-        </div>
+        <Link to="/notification">
+          <div className="preferences__button account" >
+            <div className="link" to="/account">
+              <h4>Account</h4>
+            </div>
+          </div>
+        </Link>
+        <Link to="/notification">
+          <div className="preferences__button notification" >
+            <div className="link">
+              <h4>Notification</h4>
+            </div>
+          </div>
+        </Link>
+        <Link to="/help">
+          <div className="preferences__button help" >
+            <div className="link" >
+              <h4>Help</h4>
+            </div>
+          </div>
+        </Link>
+        
         <button className="preferences__button logout" onClick={startLogout}><h4>Logout</h4></button>
       </div>
     </div>
