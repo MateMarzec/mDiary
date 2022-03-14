@@ -34,7 +34,6 @@ export const Preferences = ({ startLogout }) => (
             </div>
           </div>
         </Link>
-        
         <button className="preferences__button logout" onClick={startLogout}><h4>Logout</h4></button>
       </div>
     </div>
