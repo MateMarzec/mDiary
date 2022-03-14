@@ -13,21 +13,21 @@ export const Preferences = ({ startLogout }) => (
         </h2>
       </div>
       <div className='preferences__links'>
-        <Link to="/notification">
+        <Link to="/">
           <div className="preferences__button account" >
             <div className="link" to="/account">
               <h4>Account</h4>
             </div>
           </div>
         </Link>
-        <Link to="/notification">
+        <Link to="/">
           <div className="preferences__button notification" >
             <div className="link">
               <h4>Notification</h4>
             </div>
           </div>
         </Link>
-        <Link to="/help">
+        <Link to="/">
           <div className="preferences__button help" >
             <div className="link" >
               <h4>Help</h4>

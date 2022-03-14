@@ -1,7 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 //import { DateRangePicker } from 'react-dates';
 import { setTextFilter, sortByDate, setStartDate, setEndDate } from '../actions/filters';
+import addTest from '../images/addTest.png';
+import sortTest from '../images/sortTest.png';
 
 export class TestListFilters extends React.Component {
   state = {
@@ -32,11 +35,18 @@ export class TestListFilters extends React.Component {
             <input
               type="text"
               className="text-input"
-              placeholder="Search tests"
+              placeholder="Search Tests"
               value={this.props.filters.text}
               onChange={this.onTextChange}
             />
           </div>
+          <Link to="/create">
+            <div className="input-group__item" >
+              <div className="link">
+                <img src={addTest} alt="Add Test" />
+              </div>
+            </div>
+          </Link>
           <div className="input-group__item">
             <select
               className="select"

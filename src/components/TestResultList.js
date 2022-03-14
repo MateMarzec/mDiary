@@ -4,17 +4,11 @@ import TestResultListItem from './TestResultListItem';
 import selectTests from '../selectors/tests';
 
 export const TestResultList = (props) => (
-  <div className="content-container">
-    <div className="list-header">
-      <div className="show-for-mobile">Tests</div>
-      <div className="show-for-desktop">Test</div>
-      <div className="show-for-desktop">Amount</div>
-    </div>
-    <div className="list-body">
+  <div className="list-body">
       {
         props.tests.length === 0 ? (
           <div className="list-item list-item--message">
-            <span>No tests</span>
+            <h3>No Tests</h3>
           </div>
         ) : (
             props.tests.map((test) => {
@@ -23,7 +17,6 @@ export const TestResultList = (props) => (
           )
       }
     </div>
-  </div>
 );
 
 const mapStateToProps = (state) => {

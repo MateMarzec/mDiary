@@ -3,10 +3,11 @@ import TestResultList from './TestResultList';
 import TestResultListFilter from './TestResultListFilter';
 
 const ViewTestResults = () => (
-  <div>
+  <main className='dashboard__page'>
+    <h2 className='description'>Add Blood Test Result</h2>
     <TestResultListFilter />
     <TestResultList />
-  </div>
+  </main>
 );
 
 export default ViewTestResults;
