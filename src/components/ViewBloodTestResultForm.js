@@ -6,6 +6,7 @@ export default class ViewBloodTestResultForm extends React.Component {
     super(props);
 
     this.state = {
+      typeTest: props.test ? props.test.testType : '',
       description: props.test ? props.test.description : '',
       whiteCell: props.test ? (props.test.whiteCell / 100).toString() : '',
       redCell: props.test ? (props.test.redCell / 100).toString() : '',
@@ -28,27 +29,31 @@ export default class ViewBloodTestResultForm extends React.Component {
     return (
       <div className='content'>
         <div className='content-text'>
-          <h3>Title:</h3>
+          <h3>Test Type</h3>
+          <h4>{this.state.typeTest}</h4>
+        </div>
+        <div className='content-text'>
+          <h3>Title</h3>
           <h4>{this.state.description}</h4>
         </div>
         <div className='content-text'>
-          <h3>White Cell Count:</h3>
+          <h3>White Cell Count</h3>
           <h4>{this.state.whiteCell} 10<sup>9</sup>/L</h4>
         </div>
         <div className='content-text'>
-          <h3>Red Cell Count:</h3>
+          <h3>Red Cell Count</h3>
           <h4>{this.state.redCell} 10<sup>12</sup>/L</h4>
         </div>
         <div className='content-text'>
-          <h3>Haemoglobin Count:</h3>
+          <h3>Haemoglobin Count</h3>
           <h4>{this.state.haemoglobin} g/L</h4>
         </div>
         <div className='content-text'>
-          <h3>Haemoglobin:</h3>
+          <h3>Haemoglobin</h3>
           <h4>{this.state.mvc} fL</h4>
         </div>
         <div className='content-text'>
-          <h3>Mean Corpuscular Volume:</h3>
+          <h3>Mean Corpuscular Volume</h3>
           <h4>{this.state.mch} pg</h4>
         </div>
         <div className='content-text'>
@@ -56,11 +61,11 @@ export default class ViewBloodTestResultForm extends React.Component {
           <h4>{this.state.mchc} g/L</h4>
         </div>
         <div className='content-text'>
-          <h3>Platelet Count:</h3>
+          <h3>Platelet Count</h3>
           <h4>{this.state.platelet} 10<sup>9</sup>/L</h4>
         </div>
         <div className='content-text'>
-          <h3>Neutrophil Count:</h3>
+          <h3>Neutrophil Count</h3>
           <h4>{this.state.neutrophil} 10<sup>9</sup>/L</h4>
         </div>
         <div className='content-text'>
@@ -68,15 +73,15 @@ export default class ViewBloodTestResultForm extends React.Component {
           <h4>{this.state.lymphocyte} 10<sup>9</sup>/L</h4>
         </div>
         <div className='content-text'>
-          <h3>Monocyte Count:</h3>
+          <h3>Monocyte Count</h3>
           <h4>{this.state.monocyte} 10<sup>9</sup>/L</h4>
         </div>
         <div className='content-text'>
-          <h3>Eosinophil Count:</h3>
+          <h3>Eosinophil Count</h3>
           <h4>{this.state.eosinophil} 10<sup>9</sup>/L</h4>
         </div>
         <div className='content-text'>
-          <h3>Basophil Count:</h3>
+          <h3>Basophil Count</h3>
           <h4>{this.state.basophil} 10<sup>9</sup>/L</h4>
         </div>
       </div>

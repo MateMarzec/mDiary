@@ -6,6 +6,7 @@ export default class BloodTestResultForm extends React.Component {
     super(props);
 
     this.state = {
+      testType: 'Blood Test',
       description: props.test ? props.test.description : '',
       whiteCell: props.test ? (props.test.whiteCell / 100).toString() : '',
       redCell: props.test ? (props.test.redCell / 100).toString() : '',
@@ -128,6 +129,7 @@ export default class BloodTestResultForm extends React.Component {
     } else {
       this.setState(() => ({ error: '' }));
       this.props.onSubmit({
+        testType: this.state.testType,
         description: this.state.description,
         whiteCell: parseFloat(this.state.whiteCell, 10) * 100,
         redCell: parseFloat(this.state.redCell, 10) * 100,
@@ -149,6 +151,15 @@ export default class BloodTestResultForm extends React.Component {
     return (
       <form className="form" onSubmit={this.onSubmit}>
         {this.state.error && <p className="form__error">{this.state.error}</p>}
+        <label className='label-input' htmlFor="testType"><h4>Test Type</h4></label>
+        <input
+          id='testType'
+          type="text"
+          autoFocus
+          className="text-input disabled-input"
+          value={this.state.testType}
+          disabled
+        />
         <label className='label-input' htmlFor="description"><h4>Description</h4></label>
         <input
           id='description'

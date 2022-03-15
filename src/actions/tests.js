@@ -10,6 +10,7 @@ export const startAddTest = (testData = {}) => {
   return (dispatch, getState) => {
     const uid = getState().auth.uid;
     const {
+      testType = '',
       description = '',
       whiteCell = 0,
       redCell = 0,
@@ -25,7 +26,7 @@ export const startAddTest = (testData = {}) => {
       basophil = 0,
       createdAt = 0
     } = testData;
-    const test = { description, whiteCell, redCell, haemoglobin, mvc, mch, mchc, platelet, neutrophil, lymphocyte, monocyte, eosinophil, basophil, createdAt };
+    const test = { testType, description, whiteCell, redCell, haemoglobin, mvc, mch, mchc, platelet, neutrophil, lymphocyte, monocyte, eosinophil, basophil, createdAt };
 
     return database.ref(`users/${uid}/tests`).push(test).then((ref) => {
       dispatch(addTest({
