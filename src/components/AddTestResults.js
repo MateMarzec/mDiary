@@ -1,12 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import TestResultForm from './TestResultForm';
+import BloodTestResultForm from './BloodTestResultForm';
 import { startAddTest } from '../actions/tests';
 
 export class AddTestPage extends React.Component {
   onSubmit = (test) => {
     this.props.startAddTest(test);
-    this.props.history.push('/');
+    this.props.history.push('/dashboard');
   };
   render() {
     return (
@@ -15,7 +15,7 @@ export class AddTestPage extends React.Component {
           <h2>Add Blood Test Result</h2>
         </div>
         <div className="content-container">
-          <TestResultForm
+          <BloodTestResultForm
             onSubmit={this.onSubmit}
           />
         </div>

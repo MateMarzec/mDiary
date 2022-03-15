@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import TestResultForm from './TestResultForm';
+import BloodTestResultForm from './BloodTestResultForm';
 import { startEditTest, startRemoveTest } from '../actions/tests';
 
 export class EditTestPage extends React.Component {
@@ -19,7 +19,7 @@ export class EditTestPage extends React.Component {
             <h2 className="page-header__title">Edit Blood Test Result</h2>
         </div>
         <div className="content-container">
-          <TestResultForm
+          <BloodTestResultForm
             test={this.props.test}
             onSubmit={this.onSubmit}
           />
