@@ -86,7 +86,7 @@ export default class TestResultForm extends React.Component {
         >
         </textarea>
         <div>
-          <button className="button"><h4>Add Test</h4></button>
+          <button className="button"><h4>Save Test</h4></button>
         </div>
       </form>
     )

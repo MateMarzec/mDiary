@@ -14,20 +14,18 @@ export class EditTestPage extends React.Component {
   };
   render() {
     return (
-      <div>
+      <main className='edit__page'>
         <div className="page-header">
-          <div className="content-container">
-            <h1 className="page-header__title">Edit Test</h1>
-          </div>
+            <h2 className="page-header__title">Edit Blood Test Result</h2>
         </div>
         <div className="content-container">
           <TestResultForm
             test={this.props.test}
             onSubmit={this.onSubmit}
           />
-          <button className="button button--secondary" onClick={this.onRemove}>Remove Test</button>
+          <button className="button--secondary" onClick={this.onRemove}><h4>Remove Test</h4></button>
         </div>
-      </div>
+      </main>
     );
   }
 };
