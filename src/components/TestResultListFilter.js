@@ -28,16 +28,6 @@ export class TestListFilters extends React.Component {
               </div>
             </div>
           </Link>
-          <div className="input-group__item">
-            <select
-              className="select"
-            >
-              <option value="date">Date</option>
-              <option value="amount">Amount</option>
-            </select>
-          </div>
-          <div className="input-group__item">
-          </div>
         </div>
       </div>
     );
