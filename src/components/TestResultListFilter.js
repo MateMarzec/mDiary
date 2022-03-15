@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 //import { DateRangePicker } from 'react-dates';
 import { setTextFilter, sortByDate, setStartDate, setEndDate } from '../actions/filters';
 import addTest from '../images/addTest.png';
-import sortTest from '../images/sortTest.png';
 
 export class TestListFilters extends React.Component {
   state = {
