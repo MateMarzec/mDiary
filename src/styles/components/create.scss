@@ -15,6 +15,7 @@
     .content-container{
         margin-top: 28px;
         .form{
+            -webkit-appearance: none;
             display: flex;
             flex-direction: column;
             justify-content: center;
