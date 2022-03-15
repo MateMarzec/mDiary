@@ -3,7 +3,6 @@ import { Router, Route, Switch} from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 import Home from '../components/Home';
 import Dashboard from '../components/Dashboard';
-import ViewTestResult from '../components/ViewTestResult';
 import AddTestResults from '../components/AddTestResults';
 import EditTestResults from '../components/EditTestResults';
 import Preferences from '../components/Preferences';
@@ -23,7 +22,6 @@ const AppRouter = () => (
       <Switch>
         <PrivateRoute path="/home" component={Home} />
         <PrivateRoute path="/dashboard" component={Dashboard} />
-        <PrivateRoute path="/testResult/:id" component={ViewTestResult} />
         <PrivateRoute path="/create" component={AddTestResults} />
         <PrivateRoute path="/edit/:id" component={EditTestResults} />
         <PrivateRoute path="/preferences" component={Preferences} />
