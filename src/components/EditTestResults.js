@@ -10,7 +10,7 @@ export class EditTestPage extends React.Component {
   };
   onRemove = () => {
     this.props.startRemoveTest({ id: this.props.test.id });
-    this.props.history.push('/');
+    this.props.history.push('/dashboard');
   };
   render() {
     return (

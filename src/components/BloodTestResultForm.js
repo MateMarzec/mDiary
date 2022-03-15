@@ -1,8 +1,7 @@
 import React from 'react';
 import moment from 'moment';
-//import { SingleDatePicker } from 'react-dates';
 
-export default class TestResultForm extends React.Component {
+export default class BloodTestResultForm extends React.Component {
   constructor(props) {
     super(props);
 
