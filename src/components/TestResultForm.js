@@ -42,7 +42,7 @@ export default class TestResultForm extends React.Component {
     e.preventDefault();
 
     if (!this.state.description || !this.state.amount) {
-      this.setState(() => ({ error: 'Please provide description and amount.' }));
+      this.setState(() => ({ error: 'Please provide Description and Amount.' }));
     } else {
       this.setState(() => ({ error: '' }));
       this.props.onSubmit({
@@ -57,7 +57,9 @@ export default class TestResultForm extends React.Component {
     return (
       <form className="form" onSubmit={this.onSubmit}>
         {this.state.error && <p className="form__error">{this.state.error}</p>}
+        <label className='label-input' for="description"><h4>Description</h4></label>
         <input
+          id='description'
           type="text"
           placeholder="Description"
           autoFocus
@@ -65,22 +67,26 @@ export default class TestResultForm extends React.Component {
           value={this.state.description}
           onChange={this.onDescriptionChange}
         />
+        <label className='label-input' for="amount"><h4>Amount</h4></label>
         <input
+          id='amount'
           type="text"
           placeholder="Amount"
           className="text-input"
           value={this.state.amount}
           onChange={this.onAmountChange}
         />
+        <label className='label-input' for="note"><h4>Note(Optional)</h4></label>
         <textarea
+          id='note'
           placeholder="Add a note for your test (optional)"
-          className="textarea"
+          className="text-input"
           value={this.state.note}
           onChange={this.onNoteChange}
         >
         </textarea>
         <div>
-          <button className="button">Save Test</button>
+          <button className="button"><h4>Add Test</h4></button>
         </div>
       </form>
     )

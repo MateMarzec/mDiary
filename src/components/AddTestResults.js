@@ -10,18 +10,16 @@ export class AddTestPage extends React.Component {
   };
   render() {
     return (
-      <div>
+      <main className='create__page'>
         <div className="page-header">
-          <div className="content-container">
-            <h1 className="page-header__title">Add Blood Test Result</h1>
-          </div>
+          <h2>Add Blood Test Result</h2>
         </div>
         <div className="content-container">
           <TestResultForm
             onSubmit={this.onSubmit}
           />
         </div>
-      </div>
+      </main>
     );
   }
 }
