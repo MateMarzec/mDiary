@@ -57,6 +57,9 @@
     }
     .list-body{
         margin-bottom: 104px;
+        .list-item--message{
+            margin-top: 28px;
+        }
         .list-item{
             width: 330px;
             height: 43px;

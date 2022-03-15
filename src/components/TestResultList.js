@@ -7,7 +7,7 @@ export const TestResultList = (props) => (
   <div className="list-body">
       {
         props.tests.length === 0 ? (
-          <div className="list-item list-item--message">
+          <div className="list-item--message">
             <h3>No Tests</h3>
           </div>
         ) : (
