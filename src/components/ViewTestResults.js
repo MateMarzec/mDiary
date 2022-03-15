@@ -1,11 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import BloodTestResultForm from './BloodTestResultForm';
+import ViewBloodTestResultForm from './ViewBloodTestResultForm';
 import { startEditTest, startRemoveTest } from '../actions/tests';
 
-export class EditTestPage extends React.Component {
-  onSubmit = (test) => {
-    this.props.startEditTest(this.props.test.id, test);
+export class ViewTestPage extends React.Component {
+  onSave = () => {
     this.props.history.push('/dashboard');
   };
   onRemove = () => {
@@ -16,13 +16,15 @@ export class EditTestPage extends React.Component {
     return (
       <main className='edit__page'>
         <div className="page-header">
-            <h2 className="page-header__title">Edit Blood Test Result</h2>
+            <h2 className="page-header__title">View Blood Test Result</h2>
         </div>
         <div className="content-container">
-          <BloodTestResultForm
+          <ViewBloodTestResultForm
             test={this.props.test}
-            onSubmit={this.onSubmit}
           />
+          <Link to={`/edit/${this.props.test.id}`}>
+          <button className="button--primary" onClick={this.onSave}><h4>Edit Test</h4></button>
+          </Link>
           <button className="button--secondary" onClick={this.onRemove}><h4>Remove Test</h4></button>
         </div>
       </main>
@@ -41,4 +43,4 @@ const mapDispatchToProps = (dispatch, props) => ({
   startRemoveTest: (data) => dispatch(startRemoveTest(data))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(EditTestPage);
+export default connect(mapStateToProps, mapDispatchToProps)(ViewTestPage);

@@ -13,6 +13,7 @@ import PublicRoute from './PublicRoute';
 import Account from '../components/Account';
 import Notification from '../components/Notification';
 import Help from '../components/Help';
+import ViewTestResults from '../components/ViewTestResults'
 
 export const history = createHistory();
 
@@ -28,6 +29,7 @@ const AppRouter = () => (
         <PrivateRoute path="/account:id" component={Account} />
         <PrivateRoute path="/notification" component={Notification} />
         <PrivateRoute path="/help" component={Help} />
+        <PrivateRoute path="/view/:id" component={ViewTestResults} />
         <PublicRoute path="/" component={LoginPage} exact={true}/>
         <Route component={NotFoundPage} />
       </Switch>
