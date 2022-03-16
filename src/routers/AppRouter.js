@@ -3,7 +3,9 @@ import { Router, Route, Switch} from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 import Home from '../components/Home';
 import Dashboard from '../components/Dashboard';
-import AddTestResults from '../components/AddTestResults';
+import AddType from '../components/AddType';
+import AddBloodTestResults from '../components/AddBloodTestResults';
+import AddLiverFunctionTestResults from '../components/AddLiverFunctionTestResults';
 import EditTestResults from '../components/EditTestResults';
 import Preferences from '../components/Preferences';
 import NotFoundPage from '../components/NotFoundPage';
@@ -23,7 +25,9 @@ const AppRouter = () => (
       <Switch>
         <PrivateRoute path="/home" component={Home} />
         <PrivateRoute path="/dashboard" component={Dashboard} />
-        <PrivateRoute path="/create" component={AddTestResults} />
+        <PrivateRoute path="/create" component={AddType} exact={true}/>
+        <PrivateRoute path="/create/blood" component={AddBloodTestResults} />
+        <PrivateRoute path="/create/liver" component={AddLiverFunctionTestResults} />
         <PrivateRoute path="/edit/:id" component={EditTestResults} />
         <PrivateRoute path="/preferences" component={Preferences} />
         <PrivateRoute path="/account:id" component={Account} />

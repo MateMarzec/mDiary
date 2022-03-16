@@ -1,0 +1,43 @@
+.type__page{
+    margin-top: 53.3px;
+    margin-bottom: 104px;
+    .type__boxes{
+        display: grid;
+        grid-template-columns: 30px 1fr 30px;
+        grid-template-rows: 237px 28px 237px;
+        gap: 0px 0px;
+        grid-template-areas:
+        ". blood--addBox ."
+        ". . ."
+        ". liver--addBox .";
+        .blood--addBox { grid-area: blood--addBox; }
+        .liver--addBox { grid-area: liver--addBox; }
+        .linkBox{
+            background-color: $white;
+            border-radius: 10px;
+            box-shadow: 3px 0px 25px 3px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .box__logo{
+                margin-top: 45px;
+                margin-bottom: 45px;
+            }
+            .button{
+                position: relative;
+                background-color: $black;
+                border-radius: 5px;
+                height: 43px;
+                width: 260px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .button--text{
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
