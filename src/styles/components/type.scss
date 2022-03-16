@@ -1,7 +1,20 @@
 .type__page{
-    margin-top: 53.3px;
-    margin-bottom: 104px;
+    top: 0;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .page-header{
+        margin-top: 14px;
+        overflow-wrap: break-word;
+        text-align: center;
+        width: 140px;
+    }
     .type__boxes{
+        margin-bottom: 104px;
+        margin-top: 28px;
         display: grid;
         grid-template-columns: 30px 1fr 30px;
         grid-template-rows: 237px 28px 237px;
@@ -20,6 +33,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            min-width: 330px;
             .box__logo{
                 margin-top: 45px;
                 margin-bottom: 45px;

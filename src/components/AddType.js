@@ -4,6 +4,9 @@ import add from '../images/add.png'
 
 const AddType = () => (
   <main className='type__page'>
+        <div className="page-header">
+            <h2 className="page-header__title">Choose Test Type</h2>
+        </div>
     <div className='type__boxes'>
         <Link className='blood--addBox linkBox' to="/create/blood">
             <img className='box__logo' src={add} alt="Add" />
