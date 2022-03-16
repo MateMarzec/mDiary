@@ -8,22 +8,36 @@
         margin-bottom: 28px;
         .content-text{
             display: flex;
+            align-items: center;
             justify-content: space-between;
+            border-radius: 5px;
+            box-shadow: 0px 3px 5px -5px #000000;
             h3{
-                margin-top: 14px;
-                margin-left: 28px;
-                margin-bottom: 14px;
-                width: 200px;
+                margin: 14px;
                 overflow-wrap: break-word;
                 text-align: left;
+                width: 198.76px;
             }
             h4{
-                margin-top: 14px;
-                margin-right: 28px;
-                margin-bottom: 14px;
-                width: 70px;
+                margin: 14px;
                 overflow-wrap: break-word;
                 text-align: right;
+                font-family: SfCompactRoundedRegular;
+            }
+            img{
+                margin: 14px;
+                height: 10px;
+                width: 17.49px;
+            }
+        }
+        .sub__content-text{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 5px;
+            box-shadow: 0px 3px 5px -5px #000000;
+            h4{
+                margin: 14px 28px 14px 28px;
                 font-family: SfCompactRoundedRegular;
             }
         }

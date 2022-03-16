@@ -1,5 +1,6 @@
 import React from 'react';
 import moment from 'moment';
+import arrow from '../images/arrow.svg';
 
 export default class ViewBloodTestResultForm extends React.Component {
   constructor(props) {
@@ -39,50 +40,61 @@ export default class ViewBloodTestResultForm extends React.Component {
         <div className='content-text'>
           <h3>White Cell Count</h3>
           <h4>{this.state.whiteCell} 10<sup>9</sup>/L</h4>
+          <img src={arrow} alt="logo" />
         </div>
         <div className='content-text'>
           <h3>Red Cell Count</h3>
           <h4>{this.state.redCell} 10<sup>12</sup>/L</h4>
+          <img src={arrow} alt="logo" />
         </div>
         <div className='content-text'>
           <h3>Haemoglobin Count</h3>
           <h4>{this.state.haemoglobin} g/L</h4>
+          <img src={arrow} alt="logo" />
         </div>
         <div className='content-text'>
           <h3>Haemoglobin</h3>
           <h4>{this.state.mvc} fL</h4>
+          <img src={arrow} alt="logo" />
         </div>
         <div className='content-text'>
           <h3>Mean Corpuscular Volume</h3>
           <h4>{this.state.mch} pg</h4>
         </div>
         <div className='content-text'>
-          <h3>Mean Corpuscular Haemoglobin conc:</h3>
+          <h3>Mean Corpuscular Haemoglobin conc</h3>
           <h4>{this.state.mchc} g/L</h4>
+          <img src={arrow} alt="logo" />
         </div>
         <div className='content-text'>
           <h3>Platelet Count</h3>
           <h4>{this.state.platelet} 10<sup>9</sup>/L</h4>
+          <img src={arrow} alt="logo" />
         </div>
         <div className='content-text'>
           <h3>Neutrophil Count</h3>
           <h4>{this.state.neutrophil} 10<sup>9</sup>/L</h4>
+          <img src={arrow} alt="logo" />
         </div>
         <div className='content-text'>
           <h3>Lymphocyte Count:</h3>
           <h4>{this.state.lymphocyte} 10<sup>9</sup>/L</h4>
+          <img src={arrow} alt="logo" />
         </div>
         <div className='content-text'>
           <h3>Monocyte Count</h3>
           <h4>{this.state.monocyte} 10<sup>9</sup>/L</h4>
+          <img src={arrow} alt="logo" />
         </div>
         <div className='content-text'>
           <h3>Eosinophil Count</h3>
           <h4>{this.state.eosinophil} 10<sup>9</sup>/L</h4>
+          <img src={arrow} alt="logo" />
         </div>
         <div className='content-text'>
           <h3>Basophil Count</h3>
           <h4>{this.state.basophil} 10<sup>9</sup>/L</h4>
+          <img src={arrow} alt="logo" />
         </div>
       </div>
 

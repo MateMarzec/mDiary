@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import BloodTestResultForm from './BloodTestResultForm';
+import LiverFunctionTestResultForm from './LiverFunctionTestResultForm';
 import { startEditTest, startRemoveTest } from '../actions/tests';
 
 export class EditTestPage extends React.Component {
@@ -13,16 +14,26 @@ export class EditTestPage extends React.Component {
     this.props.history.push('/dashboard');
   };
   render() {
+    const testType = this.props.test.testType;
+    let formType;
+    if (testType === 'Blood Test') {
+      formType = <BloodTestResultForm
+            test={this.props.test}
+            onSubmit={this.onSubmit}
+          />;
+    } else if (testType === 'Liver Function Test') {
+      formType = <LiverFunctionTestResultForm
+            test={this.props.test}
+            onSubmit={this.onSubmit}
+          />;
+    }
     return (
       <main className='edit__page'>
         <div className="page-header">
             <h2 className="page-header__title">Edit Blood Test Result</h2>
         </div>
         <div className="content-container">
-          <BloodTestResultForm
-            test={this.props.test}
-            onSubmit={this.onSubmit}
-          />
+          {formType}
           <button className="button--secondary" onClick={this.onRemove}><h4>Remove Test</h4></button>
         </div>
       </main>
