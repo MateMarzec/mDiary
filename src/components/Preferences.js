@@ -23,7 +23,7 @@ export const Preferences = ({ startLogout }) => (
         <Link to="/">
           <div className="preferences__button notification" >
             <div className="link">
-              <h4>Notification</h4>
+              <h4>GDPR</h4>
             </div>
           </div>
         </Link>

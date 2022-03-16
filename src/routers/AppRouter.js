@@ -12,7 +12,7 @@ import NotFoundPage from '../components/NotFoundPage';
 import LoginPage from '../components/LoginPage';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
-import Account from '../components/Account';
+import Gdpr from '../components/Gdpr';
 import Notification from '../components/Notification';
 import Help from '../components/Help';
 import ViewTestResults from '../components/ViewTestResults'
@@ -30,7 +30,7 @@ const AppRouter = () => (
         <PrivateRoute path="/create/liver" component={AddLiverFunctionTestResults} />
         <PrivateRoute path="/edit/:id" component={EditTestResults} />
         <PrivateRoute path="/preferences" component={Preferences} />
-        <PrivateRoute path="/account:id" component={Account} />
+        <PrivateRoute path="/gdpr" component={Gdpr} />
         <PrivateRoute path="/notification" component={Notification} />
         <PrivateRoute path="/help" component={Help} />
         <PrivateRoute path="/view/:id" component={ViewTestResults} />
