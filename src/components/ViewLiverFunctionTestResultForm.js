@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 
-export default class ViewLiverFuntionTestResultForm extends React.Component {
+export default class ViewLiverFunctionTestResultForm extends React.Component {
   constructor(props) {
     super(props);
 
@@ -23,7 +23,7 @@ export default class ViewLiverFuntionTestResultForm extends React.Component {
       <div className='content'>
         <div className='content-text'>
           <h3>Test Type</h3>
-          <h4>{this.state.typeTest}</h4>
+          <h4>{this.state.testType}</h4>
         </div>
         <div className='content-text'>
           <h3>Title</h3>

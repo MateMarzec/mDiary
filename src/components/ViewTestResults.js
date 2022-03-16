@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import ViewBloodTestResultForm from './ViewBloodTestResultForm';
+import ViewLiverFunctionTestResultForm from './ViewLiverFunctionTestResultForm';
 import { startEditTest, startRemoveTest } from '../actions/tests';
 
 export class ViewTestPage extends React.Component {
@@ -13,15 +14,25 @@ export class ViewTestPage extends React.Component {
     this.props.history.push('/dashboard');
   };
   render() {
+    const testType = this.props.test.testType;
+    let formType;
+    console.log(testType);
+    if (testType === 'Blood Test') {
+      formType = <ViewBloodTestResultForm
+            test={this.props.test}
+          />;
+    } else if (testType === 'Liver Function Test') {
+      formType = <ViewLiverFunctionTestResultForm
+            test={this.props.test}
+          />;
+    }
     return (
       <main className='edit__page'>
         <div className="page-header">
             <h2 className="page-header__title">View Blood Test Result</h2>
         </div>
         <div className="content-container">
-          <ViewBloodTestResultForm
-            test={this.props.test}
-          />
+          {formType}
           <Link to={`/edit/${this.props.test.id}`}>
           <button className="button--primary" onClick={this.onSave}><h4>Edit Test</h4></button>
           </Link>

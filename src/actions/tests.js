@@ -24,9 +24,14 @@ export const startAddTest = (testData = {}) => {
       monocyte = 0,
       eosinophil = 0,
       basophil = 0,
+      protein = 0,
+      albumin = 0,
+      bilirubin = 0,
+      phosphatase = 0,
+      alt = 0,
       createdAt = 0
     } = testData;
-    const test = { testType, description, whiteCell, redCell, haemoglobin, mvc, mch, mchc, platelet, neutrophil, lymphocyte, monocyte, eosinophil, basophil, createdAt };
+    const test = { testType, description, whiteCell, redCell, haemoglobin, mvc, mch, mchc, platelet, neutrophil, lymphocyte, monocyte, eosinophil, basophil, protein, albumin, bilirubin, phosphatase, alt, createdAt };
 
     return database.ref(`users/${uid}/tests`).push(test).then((ref) => {
       dispatch(addTest({
