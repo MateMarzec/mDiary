@@ -1,5 +1,6 @@
 const testsReducerDefaultState = [];
 
+// Tests Component
 const tests = (state = testsReducerDefaultState, action) => {
   switch (action.type) {
     case 'ADD_TEST':

@@ -1,3 +1,4 @@
+// Authorization Reducer
 const auth = (state = {}, action) => {
     switch (action.type) {
       case 'LOGIN':
