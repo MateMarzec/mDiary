@@ -1,13 +1,13 @@
 const filtersReducerDefaultState = {
-  text: '',
+  text: "",
 };
 // Filters Component
 const filters = (state = filtersReducerDefaultState, action) => {
   switch (action.type) {
-    case 'SET_TEXT_FILTER':
+    case "SET_TEXT_FILTER":
       return {
         ...state,
-        text: action.text
+        text: action.text,
       };
     default:
       return state;

@@ -1,5 +1,5 @@
-import React from 'react';
-import moment from 'moment';
+import React from "react";
+import moment from "moment";
 
 // Blood Test Result Form Component
 export default class BloodTestResultForm extends React.Component {
@@ -7,23 +7,23 @@ export default class BloodTestResultForm extends React.Component {
     super(props);
 
     this.state = {
-      testType: 'Blood Test',
-      description: props.test ? props.test.description : '',
-      whiteCell: props.test ? (props.test.whiteCell / 100).toString() : '',
-      redCell: props.test ? (props.test.redCell / 100).toString() : '',
-      haemoglobin: props.test ? (props.test.haemoglobin / 100).toString() : '',
-      mvc: props.test ? (props.test.mvc / 100).toString() : '',
-      mch: props.test ? (props.test.mch / 100).toString() : '',
-      mchc: props.test ? (props.test.mchc / 100).toString() : '',
-      platelet: props.test ? (props.test.platelet / 100).toString() : '',
-      neutrophil: props.test ? (props.test.neutrophil / 100).toString() : '',
-      lymphocyte: props.test ? (props.test.lymphocyte / 100).toString() : '',
-      monocyte: props.test ? (props.test.monocyte / 100).toString() : '',
-      eosinophil: props.test ? (props.test.eosinophil / 100).toString() : '',
-      basophil: props.test ? (props.test.basophil / 100).toString() : '',
+      testType: "Blood Test",
+      description: props.test ? props.test.description : "",
+      whiteCell: props.test ? (props.test.whiteCell / 100).toString() : "",
+      redCell: props.test ? (props.test.redCell / 100).toString() : "",
+      haemoglobin: props.test ? (props.test.haemoglobin / 100).toString() : "",
+      mvc: props.test ? (props.test.mvc / 100).toString() : "",
+      mch: props.test ? (props.test.mch / 100).toString() : "",
+      mchc: props.test ? (props.test.mchc / 100).toString() : "",
+      platelet: props.test ? (props.test.platelet / 100).toString() : "",
+      neutrophil: props.test ? (props.test.neutrophil / 100).toString() : "",
+      lymphocyte: props.test ? (props.test.lymphocyte / 100).toString() : "",
+      monocyte: props.test ? (props.test.monocyte / 100).toString() : "",
+      eosinophil: props.test ? (props.test.eosinophil / 100).toString() : "",
+      basophil: props.test ? (props.test.basophil / 100).toString() : "",
       createdAt: props.test ? moment(props.test.createdAt) : moment(),
       calendarFocused: false,
-      error: ''
+      error: "",
     };
   }
   onDescriptionChange = (e) => {
@@ -126,9 +126,9 @@ export default class BloodTestResultForm extends React.Component {
     e.preventDefault();
 
     if (!this.state.description || !this.state.whiteCell) {
-      this.setState(() => ({ error: 'Please provide valid test results.' }));
+      this.setState(() => ({ error: "Please provide valid test results." }));
     } else {
-      this.setState(() => ({ error: '' }));
+      this.setState(() => ({ error: "" }));
       this.props.onSubmit({
         testType: this.state.testType,
         description: this.state.description,
@@ -153,18 +153,22 @@ export default class BloodTestResultForm extends React.Component {
     return (
       <form className="form" onSubmit={this.onSubmit}>
         {this.state.error && <p className="form__error">{this.state.error}</p>}
-        <label className='label-input' htmlFor="testType"><h4>Test Type</h4></label>
+        <label className="label-input" htmlFor="testType">
+          <h4>Test Type</h4>
+        </label>
         <input
-          id='testType'
+          id="testType"
           type="text"
           autoFocus
           className="text-input disabled-input"
           value={this.state.testType}
           disabled
         />
-        <label className='label-input' htmlFor="description"><h4>Description</h4></label>
+        <label className="label-input" htmlFor="description">
+          <h4>Description</h4>
+        </label>
         <input
-          id='description'
+          id="description"
           type="text"
           autoFocus
           className="text-input"
@@ -172,108 +176,132 @@ export default class BloodTestResultForm extends React.Component {
           onChange={this.onDescriptionChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="whiteCell"><h4>White Cell Count</h4></label>
+        <label className="label-input" htmlFor="whiteCell">
+          <h4>White Cell Count</h4>
+        </label>
         <input
-          id='whiteCell'
+          id="whiteCell"
           type="text"
           className="text-input"
           value={this.state.whiteCell}
           onChange={this.onWhiteCellChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="redCell"><h4>Red Cell Count</h4></label>
+        <label className="label-input" htmlFor="redCell">
+          <h4>Red Cell Count</h4>
+        </label>
         <input
-          id='redCell'
+          id="redCell"
           type="text"
           className="text-input"
           value={this.state.redCell}
           onChange={this.onRedCellChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="haemoglobin"><h4>Haemoglobin</h4></label>
+        <label className="label-input" htmlFor="haemoglobin">
+          <h4>Haemoglobin</h4>
+        </label>
         <input
-          id='haemoglobin'
+          id="haemoglobin"
           type="text"
           className="text-input"
           value={this.state.haemoglobin}
           onChange={this.onHaemoglobinChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="mvc"><h4>Mean Corpuscular Volume</h4></label>
+        <label className="label-input" htmlFor="mvc">
+          <h4>Mean Corpuscular Volume</h4>
+        </label>
         <input
-          id='mvc'
+          id="mvc"
           type="text"
           className="text-input"
           value={this.state.mvc}
           onChange={this.onMvcChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="mch"><h4>Mean Corpuscular Haemoglobin</h4></label>
+        <label className="label-input" htmlFor="mch">
+          <h4>Mean Corpuscular Haemoglobin</h4>
+        </label>
         <input
-          id='mch'
+          id="mch"
           type="text"
           className="text-input"
           value={this.state.mch}
           onChange={this.onMchChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="mchc"><h4>Mean Corpuscular Haemoglobin conc.</h4></label>
+        <label className="label-input" htmlFor="mchc">
+          <h4>Mean Corpuscular Haemoglobin conc.</h4>
+        </label>
         <input
-          id='mchc'
+          id="mchc"
           type="text"
           className="text-input"
           value={this.state.mchc}
           onChange={this.onMchcChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="platelet"><h4>Platelet Count</h4></label>
+        <label className="label-input" htmlFor="platelet">
+          <h4>Platelet Count</h4>
+        </label>
         <input
-          id='platelet'
+          id="platelet"
           type="text"
           className="text-input"
           value={this.state.platelet}
           onChange={this.onPlateletChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="neutrophil"><h4>Neutrophil Count</h4></label>
+        <label className="label-input" htmlFor="neutrophil">
+          <h4>Neutrophil Count</h4>
+        </label>
         <input
-          id='neutrophil'
+          id="neutrophil"
           type="text"
           className="text-input"
           value={this.state.neutrophil}
           onChange={this.onNeutrophilChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="lymphocyte"><h4>Lymphocyte Count</h4></label>
+        <label className="label-input" htmlFor="lymphocyte">
+          <h4>Lymphocyte Count</h4>
+        </label>
         <input
-          id='lymphocyte'
+          id="lymphocyte"
           type="text"
           className="text-input"
           value={this.state.lymphocyte}
           onChange={this.onLymphocyteChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="monocyte"><h4>Monocyte Count</h4></label>
+        <label className="label-input" htmlFor="monocyte">
+          <h4>Monocyte Count</h4>
+        </label>
         <input
-          id='monocyte'
+          id="monocyte"
           type="text"
           className="text-input"
           value={this.state.monocyte}
           onChange={this.onMonocyteChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="eosinophil"><h4>Eosinophil Count</h4></label>
+        <label className="label-input" htmlFor="eosinophil">
+          <h4>Eosinophil Count</h4>
+        </label>
         <input
-          id='eosinophil'
+          id="eosinophil"
           type="text"
           className="text-input"
           value={this.state.eosinophil}
           onChange={this.onEosinophilChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="basophil"><h4>Basophil Count</h4></label>
+        <label className="label-input" htmlFor="basophil">
+          <h4>Basophil Count</h4>
+        </label>
         <input
-          id='basophil'
+          id="basophil"
           type="text"
           className="text-input"
           value={this.state.basophil}
@@ -281,9 +309,11 @@ export default class BloodTestResultForm extends React.Component {
           autoComplete="off"
         />
         <div>
-          <button className="button"><h4>Save Test</h4></button>
+          <button className="button">
+            <h4>Save Test</h4>
+          </button>
         </div>
       </form>
-    )
+    );
   }
 }

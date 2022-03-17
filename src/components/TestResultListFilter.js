@@ -1,8 +1,8 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
-import { setTextFilter} from '../actions/filters';
-import addTest from '../images/addTest.svg';
+import React from "react";
+import { connect } from "react-redux";
+import { Link } from "react-router-dom";
+import { setTextFilter } from "../actions/filters";
+import addTest from "../images/addTest.svg";
 
 // Test List Filters Component
 export class TestListFilters extends React.Component {
@@ -23,7 +23,7 @@ export class TestListFilters extends React.Component {
             />
           </div>
           <Link to="/create">
-            <div className="input-group__item" >
+            <div className="input-group__item">
               <div className="link">
                 <img src={addTest} alt="Add Test" />
               </div>
@@ -33,10 +33,10 @@ export class TestListFilters extends React.Component {
       </div>
     );
   }
-};
+}
 
 const mapStateToProps = (state) => ({
-  filters: state.filters
+  filters: state.filters,
 });
 
 const mapDispatchToProps = (dispatch) => ({

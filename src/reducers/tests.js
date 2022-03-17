@@ -3,25 +3,22 @@ const testsReducerDefaultState = [];
 // Tests Component
 const tests = (state = testsReducerDefaultState, action) => {
   switch (action.type) {
-    case 'ADD_TEST':
-      return [
-        ...state,
-        action.test
-      ];
-    case 'REMOVE_TEST':
+    case "ADD_TEST":
+      return [...state, action.test];
+    case "REMOVE_TEST":
       return state.filter(({ id }) => id !== action.id);
-    case 'EDIT_TEST':
+    case "EDIT_TEST":
       return state.map((test) => {
         if (test.id === action.id) {
           return {
             ...test,
-            ...action.updates
+            ...action.updates,
           };
         } else {
           return test;
-        };
+        }
       });
-    case 'SET_TESTS':
+    case "SET_TESTS":
       return action.tests;
     default:
       return state;

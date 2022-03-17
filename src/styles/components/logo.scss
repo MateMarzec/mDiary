@@ -1,18 +1,18 @@
-.logo{
-    background-color: $white;
-    position: relative;
-    top: 14px;
-    left: 28px;
-    box-shadow: 3px 0px 6px 3px rgba(0,0,0,0.3);
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    z-index: 2;
-    .logo__image{
-        width: 32px;
-        height: 41.35px;
-    }
+.logo {
+  background-color: $white;
+  position: relative;
+  top: 14px;
+  left: 28px;
+  box-shadow: 3px 0px 6px 3px rgba(0, 0, 0, 0.3);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  z-index: 2;
+  .logo__image {
+    width: 32px;
+    height: 41.35px;
+  }
 }

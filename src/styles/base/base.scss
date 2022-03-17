@@ -1,9 +1,9 @@
-$blue: #4BB3FD;
-$green: #29E7CD;
-$black: #040F16;
-$white: #FFFBFC;
-$facebook: #4267B2;
-$google: #4285F4;
+$blue: #4bb3fd;
+$green: #29e7cd;
+$black: #040f16;
+$white: #fffbfc;
+$facebook: #4267b2;
+$google: #4285f4;
 
 @font-face {
   font-family: SfCompactRoundedRegular;
@@ -22,37 +22,37 @@ $google: #4285F4;
   src: url(../fonts/FontsFree-Net-SF-Compact-Rounded-Bold.ttf);
 }
 
-*{
+* {
   font-family: SfCompactRoundedRegular;
   z-index: 0;
   margin: 0;
   text-decoration: none;
 }
-body{
+body {
   background-color: $white;
 }
 
-h1{
+h1 {
   font-family: SfCompactRoundedMedium;
   font-size: 50px;
   letter-spacing: 2px;
 }
-h2{
+h2 {
   font-family: SfCompactRoundedSemibold;
   font-size: 25px;
   letter-spacing: 0;
 }
-h3{
+h3 {
   font-family: SfCompactRoundedMedium;
   font-size: 20px;
   letter-spacing: 0;
 }
-h4{
+h4 {
   font-family: SfCompactRoundedMedium;
   font-size: 18px;
   letter-spacing: 0;
 }
-h5{
+h5 {
   font-family: SfCompactRoundedBold;
   font-size: 12px;
   letter-spacing: 0;

@@ -1,5 +1,5 @@
-import React from 'react';
-import moment from 'moment';
+import React from "react";
+import moment from "moment";
 
 // Liver Function Test Result Form Component
 export default class LiverFunctionTestResultForm extends React.Component {
@@ -7,16 +7,16 @@ export default class LiverFunctionTestResultForm extends React.Component {
     super(props);
 
     this.state = {
-      testType: 'Liver Function Test',
-      description: props.test ? props.test.description : '',
-      protein: props.test ? (props.test.protein / 100).toString() : '',
-      albumin: props.test ? (props.test.albumin / 100).toString() : '',
-      bilirubin: props.test ? (props.test.bilirubin / 100).toString() : '',
-      phosphatase: props.test ? (props.test.phosphatase / 100).toString() : '',
-      alt: props.test ? (props.test.alt / 100).toString() : '',
+      testType: "Liver Function Test",
+      description: props.test ? props.test.description : "",
+      protein: props.test ? (props.test.protein / 100).toString() : "",
+      albumin: props.test ? (props.test.albumin / 100).toString() : "",
+      bilirubin: props.test ? (props.test.bilirubin / 100).toString() : "",
+      phosphatase: props.test ? (props.test.phosphatase / 100).toString() : "",
+      alt: props.test ? (props.test.alt / 100).toString() : "",
       createdAt: props.test ? moment(props.test.createdAt) : moment(),
       calendarFocused: false,
-      error: ''
+      error: "",
     };
   }
   onDescriptionChange = (e) => {
@@ -71,9 +71,9 @@ export default class LiverFunctionTestResultForm extends React.Component {
     e.preventDefault();
 
     if (!this.state.description || !this.state.protein) {
-      this.setState(() => ({ error: 'Please provide valid test results.' }));
+      this.setState(() => ({ error: "Please provide valid test results." }));
     } else {
-      this.setState(() => ({ error: '' }));
+      this.setState(() => ({ error: "" }));
       this.props.onSubmit({
         testType: this.state.testType,
         description: this.state.description,
@@ -91,18 +91,22 @@ export default class LiverFunctionTestResultForm extends React.Component {
     return (
       <form className="form" onSubmit={this.onSubmit}>
         {this.state.error && <p className="form__error">{this.state.error}</p>}
-        <label className='label-input' htmlFor="testType"><h4>Test Type</h4></label>
+        <label className="label-input" htmlFor="testType">
+          <h4>Test Type</h4>
+        </label>
         <input
-          id='testType'
+          id="testType"
           type="text"
           autoFocus
           className="text-input disabled-input"
           value={this.state.testType}
           disabled
         />
-        <label className='label-input' htmlFor="description"><h4>Description</h4></label>
+        <label className="label-input" htmlFor="description">
+          <h4>Description</h4>
+        </label>
         <input
-          id='description'
+          id="description"
           type="text"
           autoFocus
           className="text-input"
@@ -110,45 +114,55 @@ export default class LiverFunctionTestResultForm extends React.Component {
           onChange={this.onDescriptionChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="protein"><h4>Serum Total Protein</h4></label>
+        <label className="label-input" htmlFor="protein">
+          <h4>Serum Total Protein</h4>
+        </label>
         <input
-          id='protein'
+          id="protein"
           type="text"
           className="text-input"
           value={this.state.protein}
           onChange={this.onProteinChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="albumin"><h4>Serum Albumin</h4></label>
+        <label className="label-input" htmlFor="albumin">
+          <h4>Serum Albumin</h4>
+        </label>
         <input
-          id='albumin'
+          id="albumin"
           type="text"
           className="text-input"
           value={this.state.albumin}
           onChange={this.onAlbuminChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="bilirubin"><h4>Serum Total Bilirubin Level</h4></label>
+        <label className="label-input" htmlFor="bilirubin">
+          <h4>Serum Total Bilirubin Level</h4>
+        </label>
         <input
-          id='bilirubin'
+          id="bilirubin"
           type="text"
           className="text-input"
           value={this.state.bilirubin}
           onChange={this.onBilirubinChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="phosphatase"><h4>Total Alkaline Phosphatase</h4></label>
+        <label className="label-input" htmlFor="phosphatase">
+          <h4>Total Alkaline Phosphatase</h4>
+        </label>
         <input
-          id='phosphatase'
+          id="phosphatase"
           type="text"
           className="text-input"
           value={this.state.phosphatase}
           onChange={this.onPhosphataseChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="alt"><h4>Serum ALT Level</h4></label>
+        <label className="label-input" htmlFor="alt">
+          <h4>Serum ALT Level</h4>
+        </label>
         <input
-          id='alt'
+          id="alt"
           type="text"
           className="text-input"
           value={this.state.alt}
@@ -156,9 +170,11 @@ export default class LiverFunctionTestResultForm extends React.Component {
           autoComplete="off"
         />
         <div>
-          <button className="button"><h4>Save Test</h4></button>
+          <button className="button">
+            <h4>Save Test</h4>
+          </button>
         </div>
       </form>
-    )
+    );
   }
 }

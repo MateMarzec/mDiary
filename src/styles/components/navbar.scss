@@ -1,64 +1,64 @@
-.navbar{
+.navbar {
+  align-items: center;
+  align-content: center;
+  background-color: $white;
+  bottom: 0px !important;
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3);
+  display: flex;
+  height: 85px;
+  justify-content: space-around;
+  position: fixed;
+  width: 100vw !important;
+  z-index: 2;
+  .navbar__item {
     align-items: center;
-    align-content: center;
-    background-color: $white;
-    bottom: 0px !important;
-    box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.3);
     display: flex;
-    height: 85px;
-    justify-content: space-around;
-    position: fixed;
-    width: 100vw !important;
-    z-index: 2;
-    .navbar__item{
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-decoration: none;
-        color: $black;
-        opacity: 0.6;
-        width: 61px;
-        height: 44px;
-        .navbar__hover{
-            display: none;
-        }
-        .home__icon{
-            width: 30.85px;
-            height: 27.99px;
-        }
-        .dashboard__icon{
-            width: 27px;
-            height: 27px;
-        }
-        .settings__icon{
-            width: 29.18px;
-            height: 30px;
-        }
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color: $black;
+    opacity: 0.6;
+    width: 61px;
+    height: 44px;
+    .navbar__hover {
+      display: none;
     }
-    .is-active{
-        opacity: 1;
-        .navbar__hover{
-            background-color: $green;
-            bottom: 82.5px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.16);
-            display: block;
-            height: 6px;
-            position: absolute;
-            width: 54px;
-        }
-        h5{
-            color: $blue;
-        }
-        .home__icon{
-            content:url("../../images/home-col.svg");
-        }
-        .dashboard__icon{
-            content:url("../../images/dashboard-col.svg");
-        }
-        .settings__icon{
-            content:url("../../images/preferences-col.svg");
-        }
+    .home__icon {
+      width: 30.85px;
+      height: 27.99px;
     }
+    .dashboard__icon {
+      width: 27px;
+      height: 27px;
+    }
+    .settings__icon {
+      width: 29.18px;
+      height: 30px;
+    }
+  }
+  .is-active {
+    opacity: 1;
+    .navbar__hover {
+      background-color: $green;
+      bottom: 82.5px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.16);
+      display: block;
+      height: 6px;
+      position: absolute;
+      width: 54px;
+    }
+    h5 {
+      color: $blue;
+    }
+    .home__icon {
+      content: url("../../images/home-col.svg");
+    }
+    .dashboard__icon {
+      content: url("../../images/dashboard-col.svg");
+    }
+    .settings__icon {
+      content: url("../../images/preferences-col.svg");
+    }
+  }
 }
