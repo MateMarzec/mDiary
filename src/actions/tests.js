@@ -1,6 +1,6 @@
 import database from '../firebase/firebase';
 
-// ADD_TEST
+// Add Test
 export const addTest = (test) => ({
   type: 'ADD_TEST',
   test
@@ -42,7 +42,7 @@ export const startAddTest = (testData = {}) => {
   };
 };
 
-// REMOVE_TEST
+// Remove Test
 export const removeTest = ({ id } = {}) => ({
   type: 'REMOVE_TEST',
   id
@@ -57,7 +57,7 @@ export const startRemoveTest = ({ id } = {}) => {
   };
 };
 
-// EDIT_TEST
+// Edit Test
 export const editTest = (id, updates) => ({
   type: 'EDIT_TEST',
   id,
@@ -73,7 +73,7 @@ export const startEditTest = (id, updates) => {
   };
 };
 
-// SET_TESTS
+// Set Tests
 export const setTests = (tests) => ({
   type: 'SET_TESTS',
   tests
