@@ -26,7 +26,7 @@ const AppRouter = () => (
       <Switch>
         <PrivateRoute path="/home" component={Home} />
         <PrivateRoute path="/dashboard" component={Dashboard} />
-        <PrivateRoute path="/create" component={ChooseType} exact={true}/>
+        <PrivateRoute path="/create" component={ChooseType} exact/>
         <PrivateRoute path="/create/blood" component={AddBloodTestResults} />
         <PrivateRoute path="/create/liver" component={AddLiverFunctionTestResults} />
         <PrivateRoute path="/edit/:id" component={EditTestResults} />
@@ -35,7 +35,7 @@ const AppRouter = () => (
         <PrivateRoute path="/account" component={Account} />
         <PrivateRoute path="/help" component={Help} />
         <PrivateRoute path="/view/:id" component={ViewTestResults} />
-        <PublicRoute path="/" component={LoginPage} exact={true}/>
+        <PublicRoute path="/" component={LoginPage} exact/>
         <Route component={PageNotFound} />
       </Switch>
     </div>
