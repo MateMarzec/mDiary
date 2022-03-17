@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { setTextFilter} from '../actions/filters';
-import addTest from '../images/addTest.png';
+import addTest from '../images/addTest.svg';
 
 // Test List Filters Component
 export class TestListFilters extends React.Component {

@@ -57,6 +57,10 @@
         }
     }
     .list-body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         margin-bottom: 104px;
         .list-item--message{
             margin-top: 28px;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import add from '../images/add.png'
+import add from '../images/add.svg'
 
 // Choose Test Type Component
 const ChooseType = () => (

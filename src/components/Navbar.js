@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import dashboard from '../images/dashboard.png';
-import home from '../images/home.png';
-import preferences from '../images/preferences.png';
+import dashboard from '../images/dashboard.svg';
+import home from '../images/home.svg';
+import preferences from '../images/preferences.svg';
 
 // Navbar Component
 export const Navbar = () => (
@@ -12,7 +12,7 @@ export const Navbar = () => (
       <img src={home} alt="Home" className='home__icon'/>
       <h5>Home</h5>
     </NavLink>
-    <NavLink className="navbar__item" to="/Dashboard" activeClassName="is-active">
+    <NavLink className="navbar__item" to="/dashboard" activeClassName="is-active">
       <div className='navbar__hover'></div>
       <img src={dashboard} alt="Dashboard" className='dashboard__icon'/>
       <h5>Dashboard</h5>

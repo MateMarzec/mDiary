@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48.849" height="45.987" viewBox="0 0 48.849 45.987">
+  <defs>
+    <filter id="Icon_metro-home" x="0" y="0" width="48.849" height="45.987" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Icon_metro-home)">
+    <path id="Icon_metro-home-2" data-name="Icon metro-home" d="M33.419,19.715,17.995,7.743,2.571,19.716V14.834L17.995,2.861,33.419,14.834Zm-3.856-.435V30.849H21.851V23.136H14.139v7.712H6.427V19.28L17.995,10.6Z" transform="translate(6.43 3.14)" fill="#040f16"/>
+  </g>
+</svg>

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import UserName from './UserName'
-import add from '../images/add.png'
-import view from '../images/view.png'
+import add from '../images/add.svg'
+import view from '../images/view.svg'
 
 // Home Component
 const Home = () => (

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <linearGradient id="linear-gradient" y1="1" x2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4bb3fd"/>
+      <stop offset="1" stop-color="#29e7cd"/>
+    </linearGradient>
+  </defs>
+  <path id="Icon_material-add-box" data-name="Icon material-add-box" d="M75.611,4.5H13.389A8.886,8.886,0,0,0,4.5,13.389V75.611A8.886,8.886,0,0,0,13.389,84.5H75.611A8.915,8.915,0,0,0,84.5,75.611V13.389A8.915,8.915,0,0,0,75.611,4.5ZM66.722,48.944H48.944V66.722H40.056V48.944H22.278V40.056H40.056V22.278h8.889V40.056H66.722Z" transform="translate(-4.5 -4.5)" fill="url(#linear-gradient)"/>
+</svg>

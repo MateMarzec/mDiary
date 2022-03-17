@@ -1,15 +1,14 @@
-
 .navbar{
     align-items: center;
     align-content: center;
     background-color: $white;
-    bottom: 0px;
+    bottom: 0px !important;
     box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.3);
     display: flex;
     height: 85px;
     justify-content: space-around;
     position: fixed;
-    width: 100%;
+    width: 100vw !important;
     z-index: 2;
     .navbar__item{
         align-items: center;
@@ -53,13 +52,13 @@
             color: $blue;
         }
         .home__icon{
-            content:url("../../images/home-col.png");
+            content:url("../../images/home-col.svg");
         }
         .dashboard__icon{
-            content:url("../../images/dashboard-col.png");
+            content:url("../../images/dashboard-col.svg");
         }
         .settings__icon{
-            content:url("../../images/preferences-col.png");
+            content:url("../../images/preferences-col.svg");
         }
     }
 }
