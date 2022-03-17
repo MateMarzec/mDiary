@@ -1,10 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Route, Redirect } from 'react-router-dom';
-import Logo from '../components/Logo'
 import Background from '../components/Background';
+import Logo from '../components/Logo'
 import Navbar from '../components/Navbar';
 
+//App Private Router
 export const PrivateRoute = ({
   isAuthenticated,
   component: Component,

@@ -1,24 +1,25 @@
 import React from 'react';
 import { Router, Route, Switch} from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
-import Home from '../components/Home';
-import Dashboard from '../components/Dashboard';
-import ChooseType from '../components/ChooseType';
+import Account from '../components/Account';
 import AddBloodTestResults from '../components/AddBloodTestResults';
 import AddLiverFunctionTestResults from '../components/AddLiverFunctionTestResults';
+import ChooseType from '../components/ChooseType';
+import Dashboard from '../components/Dashboard';
 import EditTestResults from '../components/EditTestResults';
-import Preferences from '../components/Preferences';
-import PageNotFound from '../components/PageNotFound';
+import Gdpr from '../components/Gdpr';
+import Help from '../components/Help';
+import Home from '../components/Home';
 import LoginPage from '../components/LoginPage';
+import PageNotFound from '../components/PageNotFound';
+import Preferences from '../components/Preferences';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
-import Gdpr from '../components/Gdpr';
-import Account from '../components/Account';
-import Help from '../components/Help';
 import ViewTestResults from '../components/ViewTestResults'
 
 export const history = createHistory();
 
+//App Main Router
 const AppRouter = () => (
   <Router history={history}>
     <div>

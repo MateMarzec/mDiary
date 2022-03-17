@@ -1,9 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Route, Redirect } from 'react-router-dom';
-import Logo from '../components/Logo'
 import LoginBackground from '../components/LoginBackground'
+import Logo from '../components/Logo'
 
+//App Public Router
 export const PublicRoute = ({
   isAuthenticated,
   component: Component,
