@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { startLogout } from '../actions/auth';
 import UserName from './UserName';
 
+// Preferences Component
 export const Preferences = ({ startLogout }) => (
   <main className="preferences_page">
     <div className='preferences_container'>
@@ -13,21 +14,21 @@ export const Preferences = ({ startLogout }) => (
         </h2>
       </div>
       <div className='preferences__links'>
-        <Link to="/">
+        <Link to="/account">
           <div className="preferences__button account" >
-            <div className="link" to="/account">
+            <div className="link">
               <h4>Account</h4>
             </div>
           </div>
         </Link>
-        <Link to="/">
-          <div className="preferences__button notification" >
+        <Link to="/gdpr">
+          <div className="preferences__button gdpr" >
             <div className="link">
               <h4>GDPR</h4>
             </div>
           </div>
         </Link>
-        <Link to="/">
+        <Link to="/help">
           <div className="preferences__button help" >
             <div className="link" >
               <h4>Help</h4>

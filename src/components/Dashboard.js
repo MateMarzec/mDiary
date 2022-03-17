@@ -2,7 +2,8 @@ import React from 'react';
 import TestResultList from './TestResultList';
 import TestResultListFilter from './TestResultListFilter';
 
-const ViewTestResults = () => (
+// Dashboard Component
+const Dashboard = () => (
   <main className='dashboard__page'>
     <h2 className='description'>View Test Results</h2>
     <TestResultListFilter />
@@ -10,4 +11,4 @@ const ViewTestResults = () => (
   </main>
 );
 
-export default ViewTestResults;
+export default Dashboard;

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import TestResultListItem from './TestResultListItem';
 import selectTests from '../selectors/tests';
 
+// Test Result List Component
 export const TestResultList = (props) => (
   <div className="list-body">
       {

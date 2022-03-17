@@ -1,9 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { startEditTest, startRemoveTest } from '../actions/tests';
 import BloodTestResultForm from './BloodTestResultForm';
 import LiverFunctionTestResultForm from './LiverFunctionTestResultForm';
-import { startEditTest, startRemoveTest } from '../actions/tests';
 
+// Edit Test Results Component
 export class EditTestPage extends React.Component {
   onSubmit = (test) => {
     this.props.startEditTest(this.props.test.id, test);
@@ -13,6 +14,7 @@ export class EditTestPage extends React.Component {
     this.props.startRemoveTest({ id: this.props.test.id });
     this.props.history.push('/dashboard');
   };
+
   render() {
     const testType = this.props.test.testType;
     let formType;

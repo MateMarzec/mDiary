@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import LoginBackground from './LoginBackground';
 
-const NotFoundPage = () => (
+// 404 Page Not Found Component
+const PageNotFound = () => (
   <main className='notFound__page'>
     <LoginBackground />
     <h1>404</h1>
@@ -17,4 +18,4 @@ const NotFoundPage = () => (
   </main>
 );
 
-export default NotFoundPage;
+export default PageNotFound;

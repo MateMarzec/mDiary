@@ -4,7 +4,7 @@ import UserName from './UserName'
 import add from '../images/add.png'
 import view from '../images/view.png'
 
-
+// Home Component
 const Home = () => (
   <main className='home__page'>
     <div className='home__description'>

@@ -2,7 +2,8 @@ import React from 'react';
 import moment from 'moment';
 import arrow from '../images/arrow.svg';
 
-export default class ViewBloodTestResultForm extends React.Component {
+// View Blood Test Result Component
+export default class ViewBloodTestResult extends React.Component {
   constructor(props) {
     super(props);
 
@@ -86,6 +87,7 @@ export default class ViewBloodTestResultForm extends React.Component {
   switchBasophil = () => {
     this.setState({isBasophilShown: !this.state.isBasophilShown})
   }
+
   TestInNorm = () => {
     if(this.state.whiteCell >= 4 && this.state.whiteCell <= 11.00){
       this.setState({isWhiteCellInNorm: 'in'})

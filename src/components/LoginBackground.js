@@ -1,7 +1,8 @@
 import React from 'react';
 import loginBackground from '../images/loginBackground.png';
 
- const LoginBackground = () => (
+// Login Background Component
+const LoginBackground = () => (
     <div className="background">
         <img className="background__image" src={loginBackground} alt='BackgroundImages'/>
     </div>

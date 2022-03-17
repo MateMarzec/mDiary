@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import moment from 'moment';
 
+// Test Result List Item Component
 const TestListItem = ({ id, description, createdAt }) => (
   <Link to={`/view/${id}`}>
     <div className="list-item">

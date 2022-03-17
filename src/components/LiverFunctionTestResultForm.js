@@ -1,6 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 
+// Liver Function Test Result Form Component
 export default class LiverFunctionTestResultForm extends React.Component {
   constructor(props) {
     super(props);
@@ -65,6 +66,7 @@ export default class LiverFunctionTestResultForm extends React.Component {
   onFocusChange = ({ focused }) => {
     this.setState(() => ({ calendarFocused: focused }));
   };
+
   onSubmit = (e) => {
     e.preventDefault();
 
@@ -84,6 +86,7 @@ export default class LiverFunctionTestResultForm extends React.Component {
       });
     }
   };
+
   render() {
     return (
       <form className="form" onSubmit={this.onSubmit}>

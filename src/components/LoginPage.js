@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { googleLogin, facebookLogin } from '../actions/auth';
 
+// Login Page Component
 export const LoginPage = ({ googleLogin, facebookLogin }) => (
   <div className="box-layout">
     <div className="box-layout__box">

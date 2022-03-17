@@ -1,9 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import home from '../images/home.png';
 import dashboard from '../images/dashboard.png';
+import home from '../images/home.png';
 import preferences from '../images/preferences.png';
 
+// Navbar Component
 export const Navbar = () => (
   <header className="navbar">
     <NavLink className="navbar__item" to="/home" activeClassName="is-active">

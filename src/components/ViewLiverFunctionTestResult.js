@@ -2,7 +2,8 @@ import React from 'react';
 import moment from 'moment';
 import arrow from '../images/arrow.svg';
 
-export default class ViewLiverFunctionTestResultForm extends React.Component {
+// View Liver Function Test Result Component
+export default class ViewLiverFunctionTestResult extends React.Component {
   constructor(props) {
     super(props);
 

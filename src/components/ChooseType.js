@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import add from '../images/add.png'
 
-const AddType = () => (
+// Choose Test Type Component
+const ChooseType = () => (
   <main className='type__page'>
         <div className="page-header">
             <h2 className="page-header__title">Choose Test Type</h2>
@@ -24,4 +25,4 @@ const AddType = () => (
   </main>
 );
 
-export default AddType;
+export default ChooseType;

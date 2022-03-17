@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { setTextFilter} from '../actions/filters';
 import addTest from '../images/addTest.png';
 
+// Test List Filters Component
 export class TestListFilters extends React.Component {
   onTextChange = (e) => {
     this.props.setTextFilter(e.target.value);

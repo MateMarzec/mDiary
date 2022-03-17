@@ -1,8 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import LiverFunctionTestResultForm from './LiverFunctionTestResultForm';
 import { startAddTest } from '../actions/tests';
+import LiverFunctionTestResultForm from './LiverFunctionTestResultForm';
 
+// Add Liver Function Test Results Component
 export class AddTestPage extends React.Component {
   onSubmit = (test) => {
     this.props.startAddTest(test);
@@ -12,7 +13,7 @@ export class AddTestPage extends React.Component {
     return (
       <main className='create__page'>
         <div className="page-header">
-          <h2>Add Blood Test Result</h2>
+          <h2>Liver Function Test Result</h2>
         </div>
         <div className="content-container">
           <LiverFunctionTestResultForm

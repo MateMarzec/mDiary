@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import ViewBloodTestResultForm from './ViewBloodTestResultForm';
-import ViewLiverFunctionTestResultForm from './ViewLiverFunctionTestResultForm';
+import ViewBloodTestResultForm from './ViewBloodTestResult';
+import ViewLiverFunctionTestResultForm from './ViewLiverFunctionTestResult';
 import { startEditTest, startRemoveTest } from '../actions/tests';
 
 export class ViewTestPage extends React.Component {

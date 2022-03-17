@@ -1,6 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 
+// Blood Test Result Form Component
 export default class BloodTestResultForm extends React.Component {
   constructor(props) {
     super(props);
@@ -147,6 +148,7 @@ export default class BloodTestResultForm extends React.Component {
       });
     }
   };
+
   render() {
     return (
       <form className="form" onSubmit={this.onSubmit}>
