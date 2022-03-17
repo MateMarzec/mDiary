@@ -3,6 +3,7 @@ import 'firebase/compat/database';
 import 'firebase/compat/storage';
 import 'firebase/compat/auth';
 
+// Firebase Set-up
 const config = {
     apiKey: "AIzaSyDoKsbhysW4G965wNUuXqOzM2_B_VGoXwA",
     authDomain: "mdiary-project.firebaseapp.com",
