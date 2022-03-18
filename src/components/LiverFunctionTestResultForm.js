@@ -110,7 +110,7 @@ export default class LiverFunctionTestResultForm extends React.Component {
           onChange={this.onDescriptionChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="protein"><h4>Serum Total Protein</h4></label>
+        <label className='label-input' htmlFor="protein"><h4>Serum Total Protein (g/L)</h4></label>
         <input
           id='protein'
           type="text"
@@ -119,7 +119,7 @@ export default class LiverFunctionTestResultForm extends React.Component {
           onChange={this.onProteinChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="albumin"><h4>Serum Albumin</h4></label>
+        <label className='label-input' htmlFor="albumin"><h4>Serum Albumin (g/L)</h4></label>
         <input
           id='albumin'
           type="text"
@@ -128,7 +128,7 @@ export default class LiverFunctionTestResultForm extends React.Component {
           onChange={this.onAlbuminChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="bilirubin"><h4>Serum Total Bilirubin Level</h4></label>
+        <label className='label-input' htmlFor="bilirubin"><h4>Serum Total Bilirubin Level (umol/L)</h4></label>
         <input
           id='bilirubin'
           type="text"
@@ -137,7 +137,7 @@ export default class LiverFunctionTestResultForm extends React.Component {
           onChange={this.onBilirubinChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="phosphatase"><h4>Total Alkaline Phosphatase</h4></label>
+        <label className='label-input' htmlFor="phosphatase"><h4>Total Alkaline Phosphatase (u/L)</h4></label>
         <input
           id='phosphatase'
           type="text"
@@ -146,7 +146,7 @@ export default class LiverFunctionTestResultForm extends React.Component {
           onChange={this.onPhosphataseChange}
           autoComplete="off"
         />
-        <label className='label-input' htmlFor="alt"><h4>Serum ALT Level</h4></label>
+        <label className='label-input' htmlFor="alt"><h4>Serum ALT Level (u/L)</h4></label>
         <input
           id='alt'
           type="text"
