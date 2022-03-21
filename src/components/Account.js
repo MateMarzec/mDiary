@@ -1,11 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 // Account Component
 const Account = () => (
-  <div>
-    Work in progress - <Link to="/">Go home</Link>
-  </div>
+  <main className='account_page'>
+    <div className='account_container'>
+      <div className='account_description'>
+          <h2>
+            Account
+          </h2>
+        </div>
+      </div>
+      <div className='account_delete'>
+      </div>
+  </main>
 );
 
 export default Account;
