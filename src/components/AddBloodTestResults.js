@@ -13,7 +13,7 @@ export class AddTestPage extends React.Component {
     return (
       <main className='create__page'>
         <div className="page-header">
-          <h2>Blood Test Result</h2>
+          <h2>Full Blood Count Test Result</h2>
         </div>
         <div className="content-container">
           <BloodTestResultForm

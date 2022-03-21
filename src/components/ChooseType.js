@@ -12,7 +12,7 @@ const ChooseType = () => (
         <Link className='blood--addBox linkBox' to="/create/blood">
             <img className='box__logo' src={add} alt="Add" />
             <div className='button'>
-                <div className="button--text"><h4>Add Blood Test</h4></div>
+                <div className="button--text"><h4>Add Full Blood Count Test</h4></div>
             </div>
         </Link>
         <Link className='liver--addBox linkBox' to="/create/liver">

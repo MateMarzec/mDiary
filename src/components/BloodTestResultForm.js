@@ -7,7 +7,7 @@ export default class BloodTestResultForm extends React.Component {
     super(props);
 
     this.state = {
-      testType: 'Blood Test',
+      testType: 'Full Blood Count Test',
       description: props.test ? props.test.description : '',
       whiteCell: props.test ? (props.test.whiteCell / 100).toString() : '',
       redCell: props.test ? (props.test.redCell / 100).toString() : '',

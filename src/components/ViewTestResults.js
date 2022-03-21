@@ -16,7 +16,7 @@ export class ViewTestPage extends React.Component {
   render() {
     const testType = this.props.test.testType;
     let formType;
-    if (testType === 'Blood Test') {
+    if (testType === 'Full Blood Count Test') {
       formType = <ViewBloodTestResultForm
             test={this.props.test}
           />;
