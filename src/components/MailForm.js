@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 
-export const ContactForm = () => {
+export const MailForm = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -32,4 +32,4 @@ export const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default MailForm;

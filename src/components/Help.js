@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactForm from './ContactForm';
+import MailForm from './MailForm';
 
 // Help Component
 const Help = () => (
@@ -12,7 +12,7 @@ const Help = () => (
         </div>
       </div>
       <div className='help_form'>
-        <ContactForm />
+        <MailForm />
       </div>
   </main>
 );
