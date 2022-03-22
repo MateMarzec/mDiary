@@ -27,7 +27,7 @@ export const MailForm = () => {
       <input className='text-input disabled-input' type="email" value={user.email} name="user_email" disabled />
       <label className='label-input'>Message</label>
       <textarea className='text-input textarea-input' name="message" />
-      <input className='button' type="submit" value="Send" />
+      <button className="button"><h4>Send</h4></button>
     </form>
   );
 };

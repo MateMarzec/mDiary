@@ -18,7 +18,7 @@ export class EditTestPage extends React.Component {
   render() {
     const testType = this.props.test.testType;
     let formType;
-    if (testType === 'Blood Test') {
+    if (testType === 'Full Blood Count Test') {
       formType = <BloodTestResultForm
             test={this.props.test}
             onSubmit={this.onSubmit}
@@ -36,7 +36,9 @@ export class EditTestPage extends React.Component {
         </div>
         <div className="content-container">
           {formType}
-          <button className="button--secondary" onClick={this.onRemove}><h4>Remove Test</h4></button>
+          <div className='edit_form'>
+            <button className="button--secondary" onClick={this.onRemove}><h4>Remove Test</h4></button>
+          </div>
         </div>
       </main>
     );

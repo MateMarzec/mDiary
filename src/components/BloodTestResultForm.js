@@ -280,7 +280,7 @@ export default class BloodTestResultForm extends React.Component {
           onChange={this.onBasophilChange}
           autoComplete="off"
         />
-        <div>
+        <div className='submit_form'>
           <button className="button"><h4>Save Test</h4></button>
         </div>
       </form>

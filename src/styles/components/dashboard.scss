@@ -16,11 +16,16 @@
         margin-top: 28px;
         .input-group{
             display: flex;
+            justify-content: flex-end;
+            align-items: stretch;
             .input-group__item{
+                display: flex;
+
+                width: 100%;
                 .text-input{
                     margin-left: 30px;
                     height: 43px;
-                    width: 273px;
+                    width: 100%;
                     background-color: rgba(4, 15, 22, 0.05);
                     border: none;
                     border-radius: 5px;
@@ -60,14 +65,16 @@
     .list-body{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
         flex-direction: column;
         margin-bottom: 104px;
+        width: 100vw;
         .list-item--message{
             margin-top: 28px;
         }
         .list-item{
-            width: 330px;
+            margin-left: 30px;
+            margin-right: 30px;
             height: 43px;
             background-color: $white;
             border-radius: 5px;

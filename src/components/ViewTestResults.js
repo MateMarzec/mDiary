@@ -32,10 +32,12 @@ export class ViewTestPage extends React.Component {
         </div>
         <div className="content-container">
           {formType}
-          <Link to={`/edit/${this.props.test.id}`}>
-          <button className="button--primary" onClick={this.onSave}><h4>Edit Test</h4></button>
-          </Link>
-          <button className="button--secondary" onClick={this.onRemove}><h4>Remove Test</h4></button>
+          <div className='view_form'>
+            <Link to={`/edit/${this.props.test.id}`}>
+              <button className="button--primary" onClick={this.onSave}><h4>Edit Test</h4></button>
+            </Link>
+            <button className="button--secondary" onClick={this.onRemove}><h4>Remove Test</h4></button>
+          </div>
         </div>
       </main>
     );

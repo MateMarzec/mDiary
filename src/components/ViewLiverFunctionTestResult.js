@@ -141,7 +141,6 @@ export default class ViewLiverFunctionTestResult extends React.Component {
           <h4>Your serum ALT level is <span className={this.state.isAltInNorm === 'in' ? "in" : "out"}>{this.state.alt}</span> u/L. The norm is 5.00 - 38.00 u/L, your result is <span className={this.state.isAltInNorm === 'in' ? "in" : "out"}>{this.state.isAltInNorm}</span> the norm.</h4>
         </div>
       </div>
-
     )
   }
 }
