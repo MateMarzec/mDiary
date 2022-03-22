@@ -127,6 +127,7 @@ export default class LiverFunctionTestResultForm extends React.Component {
           value={this.state.albumin}
           onChange={this.onAlbuminChange}
           autoComplete="off"
+          pattern="\d*"
         />
         <label className='label-input' htmlFor="bilirubin"><h4>Serum Total Bilirubin Level (umol/L)</h4></label>
         <input
@@ -136,6 +137,7 @@ export default class LiverFunctionTestResultForm extends React.Component {
           value={this.state.bilirubin}
           onChange={this.onBilirubinChange}
           autoComplete="off"
+          pattern="\d*"
         />
         <label className='label-input' htmlFor="phosphatase"><h4>Total Alkaline Phosphatase (u/L)</h4></label>
         <input
@@ -145,6 +147,7 @@ export default class LiverFunctionTestResultForm extends React.Component {
           value={this.state.phosphatase}
           onChange={this.onPhosphataseChange}
           autoComplete="off"
+          pattern="\d*"
         />
         <label className='label-input' htmlFor="alt"><h4>Serum ALT Level (u/L)</h4></label>
         <input
@@ -154,6 +157,7 @@ export default class LiverFunctionTestResultForm extends React.Component {
           value={this.state.alt}
           onChange={this.onAltChange}
           autoComplete="off"
+          pattern="\d*"
         />
         <div className='submit_form'>
           <button className="button"><h4>Save Test</h4></button>

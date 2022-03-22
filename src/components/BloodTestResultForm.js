@@ -180,6 +180,7 @@ export default class BloodTestResultForm extends React.Component {
           value={this.state.whiteCell}
           onChange={this.onWhiteCellChange}
           autoComplete="off"
+          pattern="\d*"
         />
         <label className='label-input' htmlFor="redCell"><h4>Red Cell Count (10<sup>12</sup>/L)</h4></label>
         <input
@@ -189,6 +190,7 @@ export default class BloodTestResultForm extends React.Component {
           value={this.state.redCell}
           onChange={this.onRedCellChange}
           autoComplete="off"
+          pattern="\d*"
         />
         <label className='label-input' htmlFor="haemoglobin"><h4>Haemoglobin (g/L)</h4></label>
         <input
@@ -198,6 +200,7 @@ export default class BloodTestResultForm extends React.Component {
           value={this.state.haemoglobin}
           onChange={this.onHaemoglobinChange}
           autoComplete="off"
+          pattern="\d*"
         />
         <label className='label-input' htmlFor="mvc"><h4>Mean Corpuscular Volume (fL)</h4></label>
         <input
@@ -207,6 +210,7 @@ export default class BloodTestResultForm extends React.Component {
           value={this.state.mvc}
           onChange={this.onMvcChange}
           autoComplete="off"
+          pattern="\d*"
         />
         <label className='label-input' htmlFor="mch"><h4>Mean Corpuscular Haemoglobin (pg)</h4></label>
         <input
@@ -216,6 +220,7 @@ export default class BloodTestResultForm extends React.Component {
           value={this.state.mch}
           onChange={this.onMchChange}
           autoComplete="off"
+          pattern="\d*"
         />
         <label className='label-input' htmlFor="mchc"><h4>Mean Corpuscular Haemoglobin Concentration (g/L)</h4></label>
         <input
@@ -225,6 +230,7 @@ export default class BloodTestResultForm extends React.Component {
           value={this.state.mchc}
           onChange={this.onMchcChange}
           autoComplete="off"
+          pattern="\d*"
         />
         <label className='label-input' htmlFor="platelet"><h4>Platelet Count (10<sup>9</sup>/L)</h4></label>
         <input
@@ -234,6 +240,7 @@ export default class BloodTestResultForm extends React.Component {
           value={this.state.platelet}
           onChange={this.onPlateletChange}
           autoComplete="off"
+          pattern="\d*"
         />
         <label className='label-input' htmlFor="neutrophil"><h4>Neutrophil Count (10<sup>9</sup>/L)</h4></label>
         <input
@@ -252,6 +259,7 @@ export default class BloodTestResultForm extends React.Component {
           value={this.state.lymphocyte}
           onChange={this.onLymphocyteChange}
           autoComplete="off"
+          pattern="\d*"
         />
         <label className='label-input' htmlFor="monocyte"><h4>Monocyte Count (10<sup>9</sup>/L)</h4></label>
         <input
@@ -261,6 +269,7 @@ export default class BloodTestResultForm extends React.Component {
           value={this.state.monocyte}
           onChange={this.onMonocyteChange}
           autoComplete="off"
+          pattern="\d*"
         />
         <label className='label-input' htmlFor="eosinophil"><h4>Eosinophil Count (10<sup>9</sup>/L)</h4></label>
         <input
@@ -270,6 +279,7 @@ export default class BloodTestResultForm extends React.Component {
           value={this.state.eosinophil}
           onChange={this.onEosinophilChange}
           autoComplete="off"
+          pattern="\d*"
         />
         <label className='label-input' htmlFor="basophil"><h4>Basophil Count (10<sup>9</sup>/L)</h4></label>
         <input
@@ -279,6 +289,7 @@ export default class BloodTestResultForm extends React.Component {
           value={this.state.basophil}
           onChange={this.onBasophilChange}
           autoComplete="off"
+          pattern="\d*"
         />
         <div className='submit_form'>
           <button className="button"><h4>Save Test</h4></button>
