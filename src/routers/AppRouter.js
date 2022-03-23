@@ -15,6 +15,7 @@ import PageNotFound from "../components/PageNotFound";
 import Preferences from "../components/Preferences";
 import PrivateRoute from "./PrivateRoute";
 import PublicRoute from "./PublicRoute";
+import RegisterPage from "../components/RegisterPage";
 import ViewTestResults from "../components/ViewTestResults";
 
 export const history = createHistory();
@@ -39,6 +40,7 @@ const AppRouter = () => (
         <PrivateRoute path="/help" component={Help} />
         <PrivateRoute path="/view/:id" component={ViewTestResults} />
         <PublicRoute path="/" component={LoginPage} exact />
+        <PublicRoute path="/register" component={RegisterPage} exact />
         <Route component={PageNotFound} />
       </Switch>
     </div>

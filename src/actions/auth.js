@@ -1,5 +1,5 @@
 import { firebase, googleAuthProvider } from '../firebase/firebase';
-import { FacebookAuthProvider } from "firebase/auth";
+import { FacebookAuthProvider,  } from "firebase/auth";
 
 // Set Login
 export const login = (uid) => ({
