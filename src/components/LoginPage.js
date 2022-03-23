@@ -53,7 +53,7 @@ export const LoginPage = ({ googleLogin, facebookLogin }) => {
           </div>
         </Link>
       <button className="login-form-font login__google" onClick={googleLogin}>Login via Google</button>
-      <button className="login-form-font login__facebook" onClick={facebookLogin}>Login with Facebook</button>
+      <button className="login-form-font login__facebook" onClick={facebookLogin}>Login via Facebook</button>
     </div>
   </div>
   );
